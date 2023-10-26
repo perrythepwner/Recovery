@@ -68,11 +68,11 @@ With these links alone the player will learn what's a Bitcoin wallet, how to cre
 (We could also started Electrum with the correct server from the cli, with: `./electrum-4.4.6-x86_64.AppImage --regtest --oneserver -s 0.0.0.0:50001:t
 
 4) Connect to Challenge Handler to get the flag
-![](challenge_handler.png)
+![](./assets/challenge_handler.png)
 
 5) Send back the Bitcoin to the given address.
-![](sending_btc_back.png)
-![](btc_sent.png)
+![](./assets/sending_btc_back.png)
+![](./assets/btc_sent.png)
 ![](./assets/flag.png)
 
 
