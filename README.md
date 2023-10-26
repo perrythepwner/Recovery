@@ -60,13 +60,13 @@ With these links alone the player will learn what's a Bitcoin wallet, how to cre
 
 1) Start the client in `regtest` mode as the description suggest
 ![](electrum_newwallet.png)
-2) Standard wallet --> I already have seed --> insert the private key found in the ssh instance
+2) Standard wallet --> I already have seed --> insert the seed phrase found in the ssh instance
 ![](electrum_importseed.png)
 
 3) Change network to the Electrum server provided to connect to the blockchain
 ![](electrum_server.png)
 
-(We could also started Electrum with the correct server from the cli, with: `./electrum-4.4.6-x86_64.AppImage --regtest --oneserver -s 0.0.0.0:50001:t
+(We could also started Electrum with the correct server from the cli, with: `./electrum-4.4.6-x86_64.AppImage --regtest --oneserver -s 0.0.0.0:50001:t`
 
 4) Connect to Challenge Handler to get the flag
 ![](./assets/challenge_handler.png)
