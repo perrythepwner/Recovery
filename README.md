@@ -39,7 +39,7 @@ We must find a way to recover the funds that were stolen from us.
 We have been given an ssh instance that we can access with the credentials:
 `satoshi:L4mb0Pr0j3ct$$`
 
-![SSH access](ssh_access.png)
+![SSH access](./assets/ssh_access.png)
 
 Once we login in we'll note a `electrum-wallet-seed.txt` file inside the home directory.
 The players can google something like "electrum wallet seed" and find some interesting links:

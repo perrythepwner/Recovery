@@ -88,5 +88,5 @@ services:
     ports:
       - ${SSH_PORT}:${SSH_PORT}
     volumes:
-      - hacker-seed:/home/${HACKER_SSH_USER}/
+      - hacker-seed:/home/${HACKER_SSH_USER}/wallet
     restart: unless-stopped
