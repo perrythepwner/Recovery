@@ -1,0 +1,164 @@
+{
+  "main": {
+    "id": "139609423c366d40",
+    "type": "split",
+    "children": [
+      {
+        "id": "af8e035c8d24a475",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e177bdfa22d2c751",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "392a284c7050d1a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "58d23f56e781aaf5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e6205a4efb85a34",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dcf2db4052fe8a64",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2a2763e2d0ea72cb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "474ff66b39c8d4da",
+    "type": "split",
+    "children": [
+      {
+        "id": "5db7e3106b1cc666",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b577080d020d669",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bb7981fc8d076cae",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6cbf60d2f0397c2a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ce06ddedebfab38f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e177bdfa22d2c751",
+  "lastOpenFiles": [
+    "htb/electrum-4.4.6-x86_64.AppImage",
+    "assets/flag.png",
+    "assets/btc_sent.png",
+    "assets/sending_btc_back.png",
+    "assets/challenge_handler.png",
+    "assets/stolen_bitcoin.png",
+    "assets/electrum_server.png",
+    "assets/electrum_importseed.png",
+    "assets/electrum_newwallet.png",
+    "assets/electrum_download.png",
+    "assets/hacktheboo_banner.jpg",
+    "assets"
+  ]
+}
