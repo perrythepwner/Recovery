@@ -16,7 +16,7 @@ Category: <font color=orange> Blockchain</font>
 ```
 Hacker, help!
 During the Halloween celebrations our infrastructure was compromised as were the private keys to our Bitcoin wallet that we kept.
-We managed to locate the hacker and were able to get some SSH credentials into one of his personal cloud instances, can you try to recover my Bitcoins?
+We managed to track the hacker and were able to get some SSH credentials into one of his personal cloud instances, can you try to recover my Bitcoins?
 
 satoshi:L4mb0Pr0j3ct$$
 
@@ -29,6 +29,7 @@ NOTE: Network is regtest, check connection info in the handler first.
 ## Skills Learned
 
 - Bitcoin wallets
+- Bitcoin regtest network
 - Wallets seed phrases
 - Electrum wallet setup & interaction
 - Sending Bitcoins
