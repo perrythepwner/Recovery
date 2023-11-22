@@ -18,7 +18,7 @@ Hacker, help!
 During the Halloween celebrations our infrastructure was compromised as were the private keys to our Bitcoin wallet that we kept.
 We managed to track the hacker and were able to get some SSH credentials into one of his personal cloud instances, can you try to recover my Bitcoins?
 
-satoshi:L4mb0Pr0j3ct$$
+satoshi:L4mb0Pr0j3ct
 
 NOTE: Network is regtest, check connection info in the handler first.
 ```
@@ -38,7 +38,7 @@ NOTE: Network is regtest, check connection info in the handler first.
 
 We must find a way to recover the funds that were stolen from us.  
 We have been given an ssh instance that we can access with the credentials:
-`satoshi:L4mb0Pr0j3ct$$`
+`satoshi:L4mb0Pr0j3ct`
 
 ![SSH access](./assets/ssh_access.png)
 
@@ -66,7 +66,8 @@ With these links alone the player will learn what's a Bitcoin wallet, how to cre
 3) Change network to the Electrum server provided to connect to the blockchain
 ![](electrum_server.png)
 
-(We could also started Electrum with the correct server from the cli, with: `./electrum-4.4.6-x86_64.AppImage --regtest --oneserver -s 0.0.0.0:50001:t`
+We could also started Electrum with the correct server from the cli, with:
+ `./electrum-4.4.6-x86_64.AppImage --regtest --oneserver -s 0.0.0.0:50001:t`
 
 4) Connect to Challenge Handler to get the flag
 ![](./assets/challenge_handler.png)
@@ -75,6 +76,5 @@ With these links alone the player will learn what's a Bitcoin wallet, how to cre
 ![](./assets/sending_btc_back.png)
 ![](./assets/btc_sent.png)
 ![](./assets/flag.png)
-
 
 > HTB{n0t_y0ur_k3ys_n0t_y0ur_c01n5}
