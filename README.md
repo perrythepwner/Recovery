@@ -1,4 +1,4 @@
-![img](./assets/hacktheboo_banner.jpg)
+![img](./assets/CA_banner.jpg)
 
 # Recovery
 
@@ -11,11 +11,11 @@ Category: <font color=orange> Blockchain</font>
 
 - The challenge consist in recovery stolen BTC funds given an Electrum seed phrase in an hacked ssh instance.
 
-## Description
+# Description
 
 ```
 Hacker, help!
-During the Halloween celebrations our infrastructure was compromised as were the private keys to our Bitcoin wallet that we kept.
+During the war our infrastructure was compromised as were the private keys to our Bitcoin wallet that we kept.
 We managed to track the hacker and were able to get some SSH credentials into one of his personal cloud instances, can you try to recover my Bitcoins?
 
 satoshi:L4mb0Pr0j3ct
@@ -23,10 +23,11 @@ satoshi:L4mb0Pr0j3ct
 NOTE: Network is regtest, check connection info in the handler first.
 ```
 
-## Skills Required
+# Skills Required
 
 -  -
-## Skills Learned
+
+# Skills Learned
 
 - Bitcoin wallets
 - Bitcoin regtest network
@@ -50,9 +51,10 @@ The players can google something like "electrum wallet seed" and find some inter
 - ...
 
 With these links alone the player will learn what's a Bitcoin wallet, how to create/load it, what's BIP39 etc.
+
 # Solution
 
-### Wallet Recovery
+## Wallet Recovery
 
 0) Install Electrum wallet client
 
