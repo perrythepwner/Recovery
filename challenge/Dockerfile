@@ -12,30 +12,27 @@ RUN apt-get update -qqy && \
     wget \
     openssh-server
 
-ARG SSH_USER
-ARG SSH_PWD
-ARG SSH_PORT
-ENV SSH_PORT=${SSH_PORT}
+ENV SSH_PORT=2222
 
-RUN useradd -m ${SSH_USER}
-RUN echo ${SSH_USER}:${SSH_PWD} | chpasswd
+RUN useradd -m satoshi
+RUN echo satoshi:L4mb0Pr0j3ct | chpasswd
 
-USER ${SSH_USER}
+USER satoshi
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-ENV ZSH=/home/${SSH_USER}/.oh-my-zsh
-RUN sed -i -e "/source \$ZSH\/oh-my-zsh.sh/i export ZSH_COMPDUMP=\$ZSH\/cache\/.zcompdump-\$HOST" /home/${SSH_USER}/.zshrc
-RUN rm -rf /home/${SSH_USER}/.zcompdump
+ENV ZSH=/home/satoshi/.oh-my-zsh
+RUN sed -i -e "/source \$ZSH\/oh-my-zsh.sh/i export ZSH_COMPDUMP=\$ZSH\/cache\/.zcompdump-\$HOST" /home/satoshi/.zshrc
+RUN rm -rf /home/satoshi/.zcompdump
 RUN echo 'PROMPT="%{$fg[yellow]%}%n%{$fg[green]%}@%m%{$reset_color%} ${PROMPT}"' >> $ZSH/themes/robbyrussell.zsh-theme
 
 USER root
-RUN chsh -s $(which zsh) ${SSH_USER}
+RUN chsh -s $(which zsh) satoshi
 
 RUN mkdir /var/run/sshd
 RUN sed -i "s/#PermitRootLogin prohibit-password/PermitRootLogin no/" /etc/ssh/sshd_config
 RUN sed -i "s/#PasswordAuthentication yes/PasswordAuthentication yes/" /etc/ssh/sshd_config
 RUN sed -i "s/#Port [0-9]*/Port ${SSH_PORT}/" /etc/ssh/sshd_config
 
-RUN chown -R ${SSH_USER}:${SSH_USER} /home/${SSH_USER}
+RUN chown -R satoshi:satoshi /home/satoshi
 
 
 ##########################
@@ -86,7 +83,7 @@ FROM servers as startup
 RUN true \
     && mkdir -p /root/logs/chall/ \
     && apt update -qqy \
-    && apt install -qqy xinetd tini iproute2 iptables \
+    && apt install -qqy xinetd tini \
     && rm -rf /var/cache/apt/archives/ \
     && true
 
