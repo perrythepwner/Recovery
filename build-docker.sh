@@ -6,7 +6,7 @@ set -ex
 NAME="recovery"
 IMAGE=blockchain_${NAME}
 HOSTNAME="wallet"
-ELECTRS_PORT=50001
+ELECTRS_PORT=50002
 HANDLER_PORT=8888
 SSH_PORT=2222
 ################################
