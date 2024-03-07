@@ -16,7 +16,7 @@ electrs --conf=/root/configs/electrs.conf >> /root/logs/chall/electrs.log &
 export ELECTRS_PID=$!
 
 echo -e "\n[*] Starting electrum daemon..."
-electrum --regtest daemon -d --oneserver --server 127.0.0.1:$ELECTRS_PORT:t
+electrum --regtest daemon -d --oneserver --server 0.0.0.0:$ELECTRS_PORT:t
 
 echo -e "\n[*] Creating bank wallet & save seed..."
 electrum --regtest create -w /root/wallets/bank | jq -r '.["seed"]' > /root/seeds/bank
